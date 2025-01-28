@@ -11,4 +11,5 @@ public interface ParticipantRepository {
     Optional<Participant> findByEmail(String email);
     Optional<Participant> findById(UUID participantId);
     List<Participant> saveAll(List<Participant> participants);
+    List<Participant> findManyByTripId(UUID tripId);
 }
