@@ -1,3 +1,7 @@
 package com.planner.domain.participant;
 
-public record AddTripParticipantInput(AddTripParticipantInput addTripParticipantInput) {}
+public record AddTripParticipantInput(
+        String name,
+        String email,
+        boolean isConfirmed
+) {}
