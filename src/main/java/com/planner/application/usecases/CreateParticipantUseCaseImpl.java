@@ -41,7 +41,7 @@ public class CreateParticipantUseCaseImpl implements CreateParticipantUseCase {
                 participantSaved.getTripId(),
                 participantSaved.getName(),
                 participantSaved.getEmail(),
-                participantSaved.isConfirmed()
+                participantSaved.getIsConfirmed()
         );
     }
 }

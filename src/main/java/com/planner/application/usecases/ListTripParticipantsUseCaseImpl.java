@@ -29,7 +29,7 @@ public class ListTripParticipantsUseCaseImpl implements ListTripParticipants {
                                     participant.getTripId(),
                                     participant.getName(),
                                     participant.getEmail(),
-                                    participant.isConfirmed()
+                                    participant.getIsConfirmed()
                             )
                         )
                         .toList()

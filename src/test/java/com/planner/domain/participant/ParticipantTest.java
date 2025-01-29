@@ -29,4 +29,16 @@ class ParticipantTest {
         assertNotNull(participant.getId());
         assertEquals(participantName, participant.getName());
     }
+
+    @Test
+    void should_confirm_presence() {
+        UUID tripId = UUID.randomUUID();
+        String participantName = "Test Name";
+
+        Participant participant = Participant.create(null, tripId, participantName, "test@email.com", false);
+
+        participant.confirmPresence(null);
+
+        assertTrue(participant.getIsConfirmed());
+    }
 }

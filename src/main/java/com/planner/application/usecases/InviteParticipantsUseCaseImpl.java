@@ -48,7 +48,7 @@ public class InviteParticipantsUseCaseImpl implements InviteParticipantsUseCase 
                         participant.getTripId(),
                         participant.getName(),
                         participant.getEmail(),
-                        participant.isConfirmed()
+                        participant.getIsConfirmed()
                 ))
                 .toList();
 

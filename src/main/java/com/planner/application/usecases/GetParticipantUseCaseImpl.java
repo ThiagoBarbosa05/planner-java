@@ -26,7 +26,7 @@ public class GetParticipantUseCaseImpl implements GetParticipantUseCase {
                 participant.getTripId(),
                 participant.getName(),
                 participant.getEmail(),
-                participant.isConfirmed()
+                participant.getIsConfirmed()
         );
     }
 }

@@ -13,4 +13,5 @@ public interface ParticipantRepository {
     Optional<Participant> findById(UUID participantId);
     List<Participant> saveAll(List<Participant> participants);
     List<Participant> findManyByTripId(UUID tripId);
+    void deleteParticipant(UUID participantId, UUID tripId);
 }

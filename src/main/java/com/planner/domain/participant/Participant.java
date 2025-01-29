@@ -7,7 +7,7 @@ public class Participant {
     private UUID tripId;
     private String name;
     private String email;
-    boolean isConfirmed;
+    private boolean isConfirmed;
 
     private Participant(UUID id, UUID tripId,String name, String email, boolean isConfirmed) {
         this.id = id;
@@ -34,8 +34,13 @@ public class Participant {
         return email;
     }
 
-    public boolean isConfirmed() {
-        return isConfirmed;
+    public boolean getIsConfirmed() { return isConfirmed; }
+
+    public void confirmPresence(String name) {
+        if(name != null) {
+            this.name = name;
+        }
+        this.isConfirmed = true;
     }
 
     public static Participant create(UUID id, UUID tripId, String name, String email, boolean isConfirmed) {
