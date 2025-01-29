@@ -9,6 +9,7 @@ import java.util.UUID;
 public interface ParticipantRepository {
     Participant save(Participant participant);
     Optional<Participant> findByEmail(String email);
+    Optional<Participant> findByEmailAndTripId(String email, UUID tripId);
     Optional<Participant> findById(UUID participantId);
     List<Participant> saveAll(List<Participant> participants);
     List<Participant> findManyByTripId(UUID tripId);
